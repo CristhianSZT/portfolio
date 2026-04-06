@@ -1,0 +1,21 @@
+# Dependencias
+node_modules/
+venv/
+
+# Variables de entorno — NUNCA subir al repo
+.env
+.env.local
+.env.development
+.env.production
+
+# Builds
+dist/
+build/
+__pycache__/
+*.pyc
+
+# Mac
+.DS_Store
+
+# Logs
+*.log

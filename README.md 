@@ -1,0 +1,67 @@
+# Portfolio Personal — Cristhian Zavala
+
+Arquitecto de Software | Tech Lead | Full-Stack
+
+Sitio portfolio personal construido como proyecto de práctica para dominar
+React, FastAPI y el flujo completo de despliegue con Docker y AWS.
+
+## Stack
+
+| Capa | Tecnología |
+|---|---|
+| Frontend | React + TypeScript + Vite + Tailwind CSS |
+| Backend | FastAPI + Python 3.12 |
+| Email | Resend API |
+| Infraestructura | Docker + Docker Compose + Nginx |
+| Deploy | AWS EC2 |
+
+## Estructura
+```
+portfolio-cristhian/
+├── frontend/     # React + TypeScript
+├── backend/      # FastAPI + Python
+└── docker-compose.yml
+```
+
+## Correr localmente
+
+### Prerequisitos
+- Node.js 22+
+- Python 3.12+
+- Docker Desktop
+
+### Sin Docker
+```bash
+# Frontend
+cd frontend
+npm install
+npm run dev       # localhost:5173
+
+# Backend
+cd backend
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+uvicorn main:app --reload --port 8000
+```
+
+### Con Docker
+```bash
+docker compose up --build
+# Frontend: localhost:8080
+# Backend:  localhost:8000
+```
+
+## Variables de entorno
+
+Crea `backend/.env`:
+```env
+CONTACT_EMAIL=tu@email.com
+RESEND_API_KEY=tu_api_key
+```
+
+## Autor
+
+**Cristhian Zavala** — Arquitecto de Software
+- LinkedIn: [linkedin.com/in/cristhianszt](https://linkedin.com/in/cristhianszt)
+- GitHub: [github.com/CristhianSZT](https://github.com/CristhianSZT)
