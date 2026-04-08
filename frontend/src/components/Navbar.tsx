@@ -33,6 +33,7 @@ export default function Navbar() {
         {/* Botón CV */}
         <a
           href="/cv.pdf"
+          target="_blank"
           className="hidden md:block px-4 py-2 border border-[#3b82f6] text-[#3b82f6] text-sm font-medium rounded hover:bg-[#3b82f6] hover:text-white transition-all duration-200"
         >
           Descargar CV
