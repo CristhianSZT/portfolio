@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import Projects from './components/Projects'
 import Stack from './components/Stack'
 import Contact from './components/Contact'
+import ChatWidget from './components/ChatWidget'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Stack />
         <Contact />
       </main>
+      <ChatWidget />
     </div>
   )
 }
